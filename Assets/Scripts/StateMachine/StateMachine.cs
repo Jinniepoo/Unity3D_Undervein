@@ -16,16 +16,10 @@ namespace Diablo.AI
         {
         }
 
-        /// <summary>
-        /// Constructor that takes the mecanim state name as a string
-        /// </summary>
         public State(string mecanimStateName) : this(Animator.StringToHash(mecanimStateName))
         {
         }
 
-        /// <summary>
-        /// Constructor that takes the mecanim state hash
-        /// </summary>
         public State(int mecanimStateHash)
         {
             this.mecanimStateHash = mecanimStateHash;
@@ -39,9 +33,6 @@ namespace Diablo.AI
             OnInitialized();
         }
 
-        /// <summary>
-        /// Called directly after the machine and context are set allowing the state to do any required setup
-        /// </summary>
         public virtual void OnInitialized()
         { }
 
@@ -77,24 +68,16 @@ namespace Diablo.AI
         {
             this.context = context;
 
-            // Setup our initial state
             AddState(initialState);
             currentState = initialState;
             currentState.OnEnter();
         }
-
-        /// <summary>
-        /// Adds the state to the machine
-        /// </summary>
         public void AddState(State<T> state)
         {
             state.SetMachineAndContext(this, context);
             states[state.GetType()] = state;
         }
 
-        /// <summary>
-        /// Tick the state machine with the provided delta time
-        /// </summary>
         public void Update(float deltaTime)
         {
             elapsedTimeInState += deltaTime;
@@ -103,19 +86,14 @@ namespace Diablo.AI
             currentState.Update(deltaTime);
         }
 
-        /// <summary>
-        /// Changes the current state
-        /// </summary>
         public R ChangeState<R>() where R : State<T>
         {
-            // avoid changing to the same state
             var newType = typeof(R);
             if (currentState.GetType() == newType)
             {
                 return currentState as R;
             }
 
-            // only call end if we have a currentState
             if (currentState != null)
             {
                 currentState.OnExit();
@@ -131,13 +109,11 @@ namespace Diablo.AI
             }
 #endif
 
-            // swap states and call OnEnter
             previousState = currentState;
             currentState = states[newType];
             currentState.OnEnter();
             elapsedTimeInState = 0.0f;
 
-            // Fire the changed event if we hav a listener
             if (OnChangedState != null)
             {
                 OnChangedState();
