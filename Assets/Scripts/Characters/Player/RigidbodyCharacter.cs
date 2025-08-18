@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem; // ? NEW Input System namespace
+using UnityEngine.InputSystem;
 
 namespace Diablo.Characters
 {
@@ -42,14 +42,14 @@ namespace Diablo.Characters
         {
             inputActions = new PlayerInputActions();
 
-            // Move input
+            // Move Input
             inputActions.Player.Move.performed += context => vMoveInput = context.ReadValue<Vector2>();
             inputActions.Player.Move.canceled += context => vMoveInput = Vector2.zero;
 
-            // Jump input
+            // Jump Input
             inputActions.Player.Jump.performed += context => bJumpPressed = true;
 
-            // Dash input
+            // Dash Input
             inputActions.Player.Dash.performed += context => bDashPressed = true;
         }
 
@@ -86,7 +86,7 @@ namespace Diablo.Characters
 
             if (bDashPressed)
             {
-                float fDamping = rRigidbody.linearDamping; // or rRigidbody.linearDamping if using ECS Physics
+                float fDamping = rRigidbody.linearDamping;
                 float fLogTerm = Mathf.Log(1f / (Time.deltaTime * fDamping + 1)) / -Time.deltaTime;
                 Vector3 vDashVelocity = Vector3.Scale(transform.forward, new Vector3(fLogTerm, 0, fLogTerm)) * fDashDistance;
                 rRigidbody.AddForce(vDashVelocity, ForceMode.VelocityChange);
