@@ -205,7 +205,6 @@ namespace Diablo.Characters
 
         private void OnAnimatorMove()
         {
-            // Follow CharacterController
             Vector3 position = transform.position;
             position.y = agent.nextPosition.y;
 
