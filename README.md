@@ -1,5 +1,5 @@
 # Underveil(Unity3D, 개인 프로젝트)
-<h2 style="text-align:center">Underveil</h2>
+<h2 align="center">Underveil</h2>
 
 ![Banner Image](./Screenshots/banner.png)
 
