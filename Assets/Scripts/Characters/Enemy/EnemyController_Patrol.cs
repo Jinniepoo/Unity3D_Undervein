@@ -16,9 +16,6 @@ namespace Diablo.Characters
 
         public Transform[] waypoints;
 
-        //public float maxHealth = 100f;
-        //public float currentHealth = 100f;
-
         public NPCBattleUI healthBar;
 
         #endregion Variables
@@ -102,7 +99,6 @@ namespace Diablo.Characters
 
             if (((1 << other.gameObject.layer) & TargetMask) == 0)
             {
-                //It wasn't in an ignore layer
             }
         }
 
