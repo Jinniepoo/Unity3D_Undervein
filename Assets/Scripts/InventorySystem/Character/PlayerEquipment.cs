@@ -10,14 +10,6 @@ namespace Diablo.InventorySystem.Character
     {
         public InventoryObject equipment;
 
-        //[Header("Equipment Transforms")]
-        //[SerializeField]
-        //private Transform leftShieldTransform;
-        //[SerializeField]
-        //private Transform leftWeaponTransform;
-        //[SerializeField]
-        //private Transform rightWeaponTransform;
-
         private EquipmentCombiner combiner;
 
         private ItemInstances[] itemInstances = new ItemInstances[8];
@@ -25,7 +17,6 @@ namespace Diablo.InventorySystem.Character
         [Header("Default Equipments: H = 0, A = 1, G = 2, W = 3, P = 4, S = 5")]
         public ItemObject[] defaultItemObjects = new ItemObject[8];
 
-        // Use this for initialization
         void Awake()
         {
             combiner = new EquipmentCombiner(gameObject);
@@ -154,7 +145,6 @@ namespace Diablo.InventorySystem.Character
             ItemObject itemObject = slot.ItemObject;
             if (itemObject == null)
             {
-                // destroy deafult items
                 RemoveItemBy(slot.AllowedItems[0]);
                 return;
             }
