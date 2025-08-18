@@ -1,4 +1,4 @@
-# Project Name: Underveil (예시)
+# Underveil(Unity3D, 개인 프로젝트)
 
 ![Banner Image](./Screenshots/banner.png)
 
