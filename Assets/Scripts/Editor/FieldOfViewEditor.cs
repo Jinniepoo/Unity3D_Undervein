@@ -12,7 +12,7 @@ namespace Diablo.AI
         {
             FieldOfView fov = (FieldOfView)target;
 
-            // Draw view radius
+            // View Radius 그리기
             Handles.color = Color.white;
             Handles.DrawWireArc(fov.transform.position, Vector3.up, Vector3.forward, 360, fov.viewRadius);
 
