@@ -14,10 +14,6 @@ public class PickupItem : MonoBehaviour, IInteractable
     public void Interact(GameObject other)
     {
         float calcDistance = Vector3.Distance(transform.position, other.transform.position);
-        //if (calcDistance > distance)
-        //{
-        //    return;
-        //}
 
         PlayerCharacter playerCharacter = other.GetComponent<PlayerCharacter>();
         if (playerCharacter?.PickupItem(itemObject) ?? false)
