@@ -12,7 +12,7 @@ namespace Diablo.Core
         public bool reverseFace = false;
         public Axis axis = Axis.up;
 
-        // return a direction based upon chosen axis
+        // 선택된 축을 기반으로 방향값을 반환
         public Vector3 GetAxis(Axis refAxis)
         {
             switch (refAxis)
@@ -29,20 +29,20 @@ namespace Diablo.Core
                     return Vector3.right;
             }
 
-            // default is Vector3.up
+            // default
             return Vector3.up;
         }
 
         void Awake()
         {
-            // if no camera referenced, grab the main camera
+            // 참조된 카메라가 없으면 메인카메라를 가져옴
             if (!referenceCamera)
                 referenceCamera = Camera.main;
         }
-        //Orient the camera after all movement is completed this frame to avoid jittering
+        // 현재 프레임의 모든 이동이 완료된 후 카메라를 회전시켜 흔들림(jittering)을 방지
         void LateUpdate()
         {
-            // rotates the object relative to the camera
+            // 카메라를 기준으로 오브젝트 회전
             Vector3 targetPos = transform.position + referenceCamera.transform.rotation * (reverseFace ? Vector3.forward : Vector3.back);
             Vector3 targetOrientation = referenceCamera.transform.rotation * GetAxis(axis);
             transform.LookAt(targetPos, targetOrientation);
