@@ -13,11 +13,6 @@ namespace Diablo.Cameras
         public static void CreateTopDownCamera()
         {
             GameObject[] selectedGOs = Selection.gameObjects;
-            //foreach (var selected in selectedGOs)
-            //{
-            //    Debug.Log(selected.name);
-            //}
-
 
             if (selectedGOs.Length < 1)
             {
@@ -59,19 +54,17 @@ namespace Diablo.Cameras
                     "You need to select a GameObject in the Scene that has a Camera component assigned to it!",
                     "OK");
             }
-
-
         }
 
         static void AttachTopDownScript(GameObject camera, Transform target = null)
         {
-            // Assign top down script to the camera
+            // 카메라에 TopDown Script 할당
             TopDownCamera cameraScript = null;
             if (camera)
             {
                 cameraScript = camera.AddComponent<TopDownCamera>();
 
-                // check to see if we have a Target and we have a scrip reference
+                // Target과 스크립트 참조가 있는지 확인
                 if (cameraScript && target)
                 {
                     cameraScript.target = target;
