@@ -7,11 +7,9 @@ namespace Diablo.Characters
     {
         public List<GameObject> equipItemPrefabs = new List<GameObject>();
 
-        //scripts
         private Stitcher stitcher;
 
         private List<GameObject> equippedItems = new List<GameObject>();
-        //public GameObject equippedHead;
 
         #region Monobehaviour
         public void Awake()
@@ -19,17 +17,14 @@ namespace Diablo.Characters
             stitcher = new Stitcher();
         }
 
-        // Start is called before the first frame update
         void Start()
         {
             foreach (GameObject itemPrefab in equipItemPrefabs)
             {
-                //GameObject equippedItem = EquipItem(itemPrefab, equippedItem)
                 equippedItems.Add(EquipItem(itemPrefab));
             }
         }
 
-        // Update is called once per frame
         void Update()
         {
         }
@@ -62,13 +57,6 @@ namespace Diablo.Characters
 
     public class Stitcher
     {
-        /// <summary>
-        /// Stitch clothing onto an avatar.  Both clothing and avatar must be instantiated however clothing may be destroyed after.
-        /// </summary>
-        /// <param name="sourceClothing"></param>
-        /// <param name="targetAvatar"></param>
-        /// <returns>Newly created clothing on avatar</returns>
-
         public GameObject Stitch(GameObject sourceClothing, GameObject targetAvatar)
         {
             TransformCatalog boneCatalog = new TransformCatalog(targetAvatar.transform);
@@ -91,14 +79,11 @@ namespace Diablo.Characters
                 Transform source = meshRenderer.transform;
                 Debug.Log(source);
 
-                // Find parent by name
                 string parentName = meshRenderer.transform.parent.name;
 
                 Transform parent = targetAvatar.transform.FindInChildren(parentName);
 
-                //Transform parent = targetAvatar.transform.Find(parentName);
                 GameObject instantiatedItem = GameObject.Instantiate<GameObject>(meshRenderer.gameObject, parent);
-                //instantiatedItem.transform.parent = parent;
                 Transform target = instantiatedItem.transform;
                 Debug.Log(target);
             }
@@ -129,8 +114,6 @@ namespace Diablo.Characters
         {
             MeshRenderer target = parent.AddComponent<MeshRenderer>();
             MeshFilter filter = parent.AddComponent<MeshFilter>();
-            //filter.mesh = source.mesh
-            //target.sharedMesh = source.sharedMesh;
             target.materials = source.materials;
             return target;
         }
