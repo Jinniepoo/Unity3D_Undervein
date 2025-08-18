@@ -11,7 +11,6 @@ namespace Diablo.Cameras
         #endregion
 
         #region Main Methods
-        // Start is called before the first frame update
         void Start()
         {
             HandleCamera();
