@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2eaf8c2d61961445a90e16378b3907c, type: 3}
+  m_Name: Weapon_AdvancedSword
+  m_EditorClassIdentifier: 
+  type: 3
+  stackable: 0
+  icon: {fileID: 21300000, guid: 5fd50594014b70e48bd6993443d46b32, type: 3}
+  modelPrefab: {fileID: 0}
+  data:
+    id: -1
+    name: Beginner Sword
+    buffs:
+    - stat: 0
+      value: 500
+      min: 300
+      max: 500
+    - stat: 1
+      value: 100
+      min: 50
+      max: 100
+    - stat: 2
+      value: 100
+      min: 50
+      max: 100
+    - stat: 4
+      value: 200
+      min: 100
+      max: 200
+    - stat: 5
+      value: 50
+      min: 10
+      max: 50
+  boneNames: []
+  description: 
