@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem; // ? NEW Input System namespace
+using UnityEngine.InputSystem; 
 
 namespace Diablo.Characters
 {
@@ -18,7 +18,7 @@ namespace Diablo.Characters
         [SerializeField] private LayerMask lGroundLayerMask;
 
         private CharacterController characterController;
-        /* ÀúÇ×°ª °è»ê */
+        // ì €í•­ê°’ ê³„ì‚°
         private Vector3 vCalcVelocity;
         private bool bOnGround = true;
 
@@ -87,7 +87,7 @@ namespace Diablo.Characters
                 bDashPressed = false;
             }
 
-            /* Áß·Â ¹× °¨¼Ó Ã³¸® */
+            // ì¤‘ë ¥ ë° ê°ì† ì²˜ë¦¬ 
             vCalcVelocity.y += fGravity * Time.deltaTime;
             vCalcVelocity.x /= 1 + vDrags.x * Time.deltaTime;
             vCalcVelocity.y /= 1 + vDrags.y * Time.deltaTime;
