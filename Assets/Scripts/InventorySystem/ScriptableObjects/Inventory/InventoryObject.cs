@@ -113,11 +113,6 @@ namespace Diablo.InventorySystem.Inventory
         public void Save()
         {
             #region Optional Save
-            //string saveData = JsonUtility.ToJson(Container, true);
-            //BinaryFormatter bf = new BinaryFormatter();
-            //FileStream file = File.Create(string.Concat(Application.persistentDataPath, savePath));
-            //bf.Serialize(file, saveData);
-            //file.Close();
             #endregion
 
             IFormatter formatter = new BinaryFormatter();
@@ -132,10 +127,6 @@ namespace Diablo.InventorySystem.Inventory
             if (File.Exists(string.Concat(Application.persistentDataPath, savePath)))
             {
                 #region Optional Load
-                //BinaryFormatter bf = new BinaryFormatter();
-                //FileStream file = File.Open(string.Concat(Application.persistentDataPath, savePath), FileMode.Open, FileAccess.Read);
-                //JsonUtility.FromJsonOverwrite(bf.Deserialize(file).ToString(), Container);
-                //file.Close();
                 #endregion
 
                 IFormatter formatter = new BinaryFormatter();
