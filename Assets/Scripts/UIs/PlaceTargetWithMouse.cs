@@ -11,26 +11,12 @@ namespace Diablo.SceneUtils
         public Transform target = null;
 
         #endregion Variables
-        // Update is called once per frame
         void Update()
         {
             if (target)
             {
                 transform.position = target.position + Vector3.up * surfaceOffset;
             }
-            //if (!Input.GetMouseButtonDown(0))
-            //{
-            //    return;
-            //}
-
-            //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            //RaycastHit hit;
-            //if (!Physics.Raycast(ray, out hit))
-            //{
-            //    return;
-            //}
-
-            //transform.position = hit.point + hit.normal * surfaceOffset;
         }
 
         public void SetPosition(RaycastHit hit)
