@@ -33,25 +33,18 @@ namespace Diablo.Cameras
                 return;
             }
 
-            // Build world position vector
+            // 월드 
             Vector3 worldPosition = (Vector3.forward * -distance) + (Vector3.up * height);
-            //Debug.DrawLine(m_Target.position, worldPosition, Color.red);
 
-            // Build our Rotated vector
+            // 회전
             Vector3 rotatedVector = Quaternion.AngleAxis(angle, Vector3.up) * worldPosition;
-            //Debug.DrawLine(m_Target.position, rotatedVector, Color.green);
 
-            // Move our position
+            // 이동
             Vector3 flatTargetPosition = target.position;
             flatTargetPosition.y += lookAtHeight;
 
             Vector3 finalPosition = flatTargetPosition + rotatedVector;
-            //Debug.DrawLine(m_Target.position, finalPosition, Color.blue);
-
-            //            transform.position = finalPosition;
             transform.position = Vector3.SmoothDamp(transform.position, finalPosition, ref refVelocity, smoothSpeed);
-            //Vector3 smoothedPosition = Vector3.Lerp(transform.position, finalPosition, m_SmoothSpeed);
-            //transform.position = smoothedPosition;
 
             transform.LookAt(target.position);
         }
