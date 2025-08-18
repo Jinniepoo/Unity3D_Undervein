@@ -1,4 +1,4 @@
-<h1 align="center">Underveil(Unity3D, 개인 프로젝트)</h1>
+<h1 align="center">Undervein(Unity3D, 개인 프로젝트)</h1>
 
 ![Banner Image](./Screenshots/banner.png)
 
