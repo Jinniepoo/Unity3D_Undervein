@@ -33,10 +33,6 @@ namespace Diablo.DialogueSystem
         public void Interact(GameObject other)
         {
             float calcDistance = Vector3.Distance(other.transform.position, transform.position);
-            //if (calcDistance > distance)
-            //{
-            //    return;
-            //}
 
             if (isStartDialogue)
             {
