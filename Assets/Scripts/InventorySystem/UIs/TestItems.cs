@@ -15,7 +15,6 @@ public class TestItems : MonoBehaviour
         if (databaseObject.itemObjects.Length > 0)
         {
             ItemObject newItemObject = databaseObject.itemObjects[Random.Range(0, databaseObject.itemObjects.Length - 1)];
-            //ItemObject newItemObject = databaseObject.itemObjects[databaseObject.itemObjects.Length - 1];
             Item newItem = new Item(newItemObject);
 
             inventoryObject.AddItem(newItem, 1);
@@ -25,7 +24,6 @@ public class TestItems : MonoBehaviour
     
     public void ClearInventory()
     {
-        //equipmentObject?.Clear();
         inventoryObject?.Clear();
     }
 }
