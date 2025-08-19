@@ -2,7 +2,7 @@
 
 ![Banner Image](Packages/GitImages/Undervein.png)
 <p align="center">
-*(해당 배너 이미지는 AI로 생성되었습니다)
+<sub>(해당 배너 이미지는 AI로 생성되었습니다)</sub>
 </p>
 
 ## 프로젝트 소개
