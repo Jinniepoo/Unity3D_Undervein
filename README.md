@@ -20,7 +20,6 @@
 
 ## User Interface (UI)
 ![NPC](NPC.gif)
-)  
 ![Cursor Picking Pivot](ClickUI.gif)
 
 ---
