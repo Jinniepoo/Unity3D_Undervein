@@ -18,9 +18,10 @@
 
 ---
 
-## 스크린샷 / GIF
-![Gameplay GIF](./Screenshots/gameplay.gif)  
-![UI Screenshot](./Screenshots/ui.png)
+## User Interface (UI)
+![NPC](![NPC](https://github.com/user-attachments/assets/7f51f566-5e31-4d5c-aa50-cf623f1c50d3)
+)  
+![Cursor Picking Pivot]()
 
 ---
 
