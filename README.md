@@ -1,4 +1,4 @@
-<img width="1024" height="1024" alt="Undervein" src="https://github.com/user-attachments/assets/ec0fa862-ee69-4eab-96c7-8bbdea4f7e96" /><img width="1024" height="1024" alt="Undervein" src="https://github.com/user-attachments/assets/7f45c53b-15a4-44a6-b735-a8a3c1103ada" /><h1 align="center">Undervein(Unity3D, 개인 프로젝트)</h1>
+<h1 align="center">Undervein(Unity3D, 개인 프로젝트)</h1>
 
 ![Banner Image](<img width="1024" height="1024" alt="Undervein" src="https://github.com/user-attachments/assets/a5bda731-a51e-4519-a407-3251c6a77710" />)
 
