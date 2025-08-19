@@ -28,6 +28,11 @@
 ## Effects
 
 ## Inventory/Equipment
+
+<p align="center">
+   <img src="Packages/GitImages/InventoryUI_Diagram.png" width="900" />
+</p>
+
 <p align="center">
    <img src="Packages/GitImages/EquipSkinned.gif" width="900" />
 </p>
