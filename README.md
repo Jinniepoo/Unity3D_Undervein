@@ -24,7 +24,10 @@
 <p align="center">
    <img src="Packages/GitImages/MonsterAtt.gif" width="900" />
 </p>
+
 ## Effects
+
+## Inventory/Equipment
 <p align="center">
    <img src="Packages/GitImages/EquipSkinned.gif" width="900" />
 </p>
@@ -32,7 +35,6 @@
 <p align="center">
    <img src="Packages/GitImages/EquipMesh.gif" width="900" />
 </p>
-## Inventory/Equipment
 
 ## User Interface (UI)
 <p align="center">
