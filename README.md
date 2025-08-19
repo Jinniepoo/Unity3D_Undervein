@@ -1,6 +1,6 @@
 <h1 align="center">Undervein(Unity3D, 개인 프로젝트)</h1>
 
-![Banner Image](<img width="1024" height="1024" alt="Undervein" src="https://github.com/user-attachments/assets/a5bda731-a51e-4519-a407-3251c6a77710" />)
+![Banner Image](Undervein.png)
 
 
 ## 프로젝트 소개
@@ -19,9 +19,9 @@
 ---
 
 ## User Interface (UI)
-![NPC](![NPC](https://github.com/user-attachments/assets/7f51f566-5e31-4d5c-aa50-cf623f1c50d3)
+![NPC](NPC.gif)
 )  
-![Cursor Picking Pivot]()
+![Cursor Picking Pivot](ClickUI.gif)
 
 ---
 
