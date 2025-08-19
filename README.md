@@ -1,7 +1,7 @@
 <h1 align="center">Undervein(Unity3D, 개인 프로젝트)</h1>
 
 ![Banner Image](Packages/GitImages/Undervein.png)
-
+*AI 이미지 생성*
 
 ## 프로젝트 소개
 **Underveil**은 탑다운 3D 던전 탐험 게임으로, 플레이어는 지하 던전을 탐험하며 몬스터와 전투를 벌입니다.  
