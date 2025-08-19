@@ -19,8 +19,10 @@
 ---
 
 ## User Interface (UI)
-<img src="Packages/GitImages/NPC.gif" width="900" />
-<img src="Packages/GitImages/ClickUI.gif" width="900" />
+<p align="center">
+   <img src="Packages/GitImages/NPC.gif" width="900" />
+   <img src="Packages/GitImages/ClickUI.gif" width="900" />
+</p>
 
 ---
 
