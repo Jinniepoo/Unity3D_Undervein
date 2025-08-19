@@ -18,11 +18,22 @@
 
 ---
 
+## Characters(Player/Monster)
+
+## Effects
+
+## Inventory/Equipment
+
 ## User Interface (UI)
 <p align="center">
-   <img src="Packages/GitImages/NPC.gif" width="900" />
    <img src="Packages/GitImages/ClickUI.gif" width="900" />
 </p>
+
+## NPC Dialogue System
+<p align="center">
+   <img src="Packages/GitImages/NPC.gif" width="900" />
+</p>
+
 
 ---
 
