@@ -1,6 +1,6 @@
 <h1 align="center">Undervein(Unity3D, 개인 프로젝트)</h1>
 
-![Banner Image](Undervein.png)
+![Banner Image](<img width="831" height="512" alt="Image" src="https://github.com/user-attachments/assets/1989e04a-7398-4467-a466-090179ac2e6c" />)
 
 
 ## 프로젝트 소개
