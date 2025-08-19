@@ -21,6 +21,8 @@
 ## User Interface (UI)
 ![NPC](Packages/GitImages/NPC.gif)
 ![Cursor Picking Pivot](Packages/GitImages/ClickUI.gif)
+<img src="Packages/GitImages/NPC.gif" width="200" />
+<img src="Packages/GitImages/ClickUI.gif" width="200" />
 
 ---
 
