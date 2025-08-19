@@ -1,7 +1,7 @@
 <h1 align="center">Undervein(Unity3D, 개인 프로젝트)</h1>
 
 ![Banner Image](Packages/GitImages/Undervein.png)
-<p align="right">
+<p align="center">
 *(해당 배너 이미지는 AI로 생성되었습니다)
 </p>
 
