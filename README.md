@@ -1,6 +1,7 @@
-<h1 align="center">Undervein(Unity3D, 개인 프로젝트)</h1>
+<img width="1024" height="1024" alt="Undervein" src="https://github.com/user-attachments/assets/ec0fa862-ee69-4eab-96c7-8bbdea4f7e96" /><img width="1024" height="1024" alt="Undervein" src="https://github.com/user-attachments/assets/7f45c53b-15a4-44a6-b735-a8a3c1103ada" /><h1 align="center">Undervein(Unity3D, 개인 프로젝트)</h1>
 
-![Banner Image](https://blz-contentstack-images.akamaized.net/v3/assets/blt77f4425de611b362/blt6d7b0fd8453e72b9/646e720a71d9db111a265e8c/d4-open-graph_001.jpg)
+![Banner Image](<img width="1024" height="1024" alt="Undervein" src="https://github.com/user-attachments/assets/a5bda731-a51e-4519-a407-3251c6a77710" />)
+
 
 ## 프로젝트 소개
 **Underveil**은 탑다운 3D 던전 탐험 게임으로, 플레이어는 지하 던전을 탐험하며 몬스터와 전투를 벌입니다.  
