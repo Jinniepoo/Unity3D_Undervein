@@ -31,6 +31,7 @@ Unity Character Controller와 NavMeshAgent을 활용하였습니다. 3인칭 Top
 FSM 상태 : IdleState / MoveState / AttackState / DeadState
 
 -- 전투 시스템 --
+
 플레이어와 몬스터의 공격 FSM을 구현하였으며, 피격/사망 처리와 함께 공격 이펙트를 연동하여 전투의 타격감을 강화했습니다.
 
 <p align="center">
@@ -45,6 +46,8 @@ FSM 상태 : IdleState / MoveState / AttackState / DeadState
    <img src="Packages/GitImages/InventoryUI_Diagram.png" width="900" />
 </p>
 
+장비 아이템(Equipment)은 인벤토리에서 장착할 수 있으며, 무기(일반Mesh) 및 방어구(Skinned Mesh)를 캐릭터에 교체 적용할 수 있습니다. 
+
 Equip Skinned Mesh
 
 <p align="center">
@@ -58,13 +61,18 @@ Equip Separate Model Mesh
 </p>
 
 ## Loot & Consume Item
+
 <p align="center">
   <img src="Packages/GitImages/LootItems.gif" width="900" />
 </p>
 
+바닥에 떨어진 아이템과 충돌 시 자동으로 아이템 습득 후 인벤토리에 추가됩니다.
+
 <p align="center">
   <img src="Packages/GitImages/ConsumeItems.gif" width="900" />
 </p>
+
+Consumable Item (예: HP Potion, Mushroom 등)은 인벤토리에서 우클릭 사용 시 체력을 회복하는 등 지정된 Stats을 증가시킬 수 있습니다.
 
 <p align="center">
   <img src="Packages/GitImages/EquipItems.gif" width="900" />
@@ -79,9 +87,13 @@ Equip Separate Model Mesh
 <p align="center">
    <img src="Packages/GitImages/NPC.gif" width="900" />
 </p>
+
 <p align="center">
    (해당 다이얼로그 내용은 AI로 생성되었습니다)
 </p>
+
+특정 NPC를 우클릭으로 Targeting 후, 플레이어가 지정된 거리까지 이동하면 대화가 시작됩니다.
+NPC와의 대화 시 대화창 UI가 열리고 애니메이션이 연동되어 자연스러운 연출을 구현했습니다.
 
 ---
 
