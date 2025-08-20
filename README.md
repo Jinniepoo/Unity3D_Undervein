@@ -41,6 +41,18 @@
    <img src="Packages/GitImages/EquipMesh.gif" width="900" />
 </p>
 
+## Loot & Consume Item
+<p align="center">
+  <img src="Packages/GitImages/LootItems.gif" width="900" />
+</p>
+
+<p align="center">
+  <img src="Packages/GitImages/ConsumeItems.gif" width="900" />
+</p>
+
+<p align="center">
+  <img src="Packages/GitImages/EquipItems.gif" width="900" />
+</p>
 ## User Interface (UI)
 <p align="center">
    <img src="Packages/GitImages/ClickUI.gif" width="900" />
