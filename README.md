@@ -33,9 +33,13 @@
    <img src="Packages/GitImages/InventoryUI_Diagram.png" width="900" />
 </p>
 
+Equip Skinned Mesh
+
 <p align="center">
    <img src="Packages/GitImages/EquipSkinned.gif" width="900" />
 </p>
+
+Equip Separate Model Mesh
 
 <p align="center">
    <img src="Packages/GitImages/EquipMesh.gif" width="900" />
