@@ -14,7 +14,7 @@
 **약 1.5개월 (2025/07/17 ~ 2025/08/20)**
 
 ## 리소스
-**Turbosquid, Mixamo, Unity Asset Store 등에서 제공하는 무료 에셋과 모델을 활용하여 개발되었습니다**
+**Turbosquid, Mixamo, Unity Asset Store** 등에서 제공하는 무료 에셋과 모델을 활용하여 개발되었습니다
 
 ---
 ## 주요 특징
