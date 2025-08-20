@@ -49,6 +49,8 @@
 ## NPC Dialogue System
 <p align="center">
    <img src="Packages/GitImages/NPC.gif" width="900" />
+</p>
+<p align="center">
    (해당 다이얼로그 내용은 AI로 생성되었습니다)
 </p>
 
