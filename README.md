@@ -53,6 +53,7 @@
 <p align="center">
   <img src="Packages/GitImages/EquipItems.gif" width="900" />
 </p>
+
 ## User Interface (UI)
 <p align="center">
    <img src="Packages/GitImages/ClickUI.gif" width="900" />
