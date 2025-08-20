@@ -20,7 +20,19 @@
 
 ---
 
-## Characters(Player/Monster)
+## Characters
+
+Unity Character Controller와 NavMeshAgent을 활용하였습니다. 3인칭 Top-Down Camera 시점으로 구현하여 유저가 바닥을 클릭하면 같은 연출을 했습니다. Mouse Raycast 기반 Reticle 표시 기능 또한 추가하여 직관적인 조작감을 추가했습니다.
+
+-- FSM(Finite State Machine) --
+
+플레이어와 몬스터 모두FSM(Finite State Machine)구조로 구현하였습니다. 
+몬스터 AI는 Waypoint를 따라 순찰하며, 시야 범위 내에 플레이어가 감지되면 추적 및 전투 상태로 전환할 수 있습니다.
+FSM 상태 : IdleState / MoveState / AttackState / DeadState
+
+-- 전투 시스템 --
+플레이어와 몬스터의 공격 FSM을 구현하였으며, 피격/사망 처리와 함께 공격 이펙트를 연동하여 전투의 타격감을 강화했습니다.
+
 <p align="center">
    <img src="Packages/GitImages/MonsterAtt.gif" width="900" />
 </p>
