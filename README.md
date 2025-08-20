@@ -6,33 +6,30 @@
 </p>
 
 ## 프로젝트 소개
+---
 **Underveil**은 탑다운 3D 던전 탐험 게임으로, 플레이어는 지하 던전을 탐험하며 몬스터와 전투를 벌입니다.  
 이 프로젝트는 Unity 2023 LTS 버전을 사용하여 제작되었으며, 주로 클라이언트 프로그래밍과 게임플레이 시스템 구현에 초점을 맞췄습니다.
 
----
-
 ## 주요 특징
+---
 - **탑다운 3D 컨트롤**: 플레이어 이동 및 마우스 클릭 기반 목표 지정
 - **AI 및 전투 시스템**: NavMesh 기반 적 추적, 거리 기반 공격, 애니메이션 상태 관리
 - **아이템/인벤토리 시스템**: 장비, 소비 아이템 사용, 아이템 픽업
 - **이펙트 및 파티클 시스템**: GPU 기반 파티클, 스킬 효과 구현
 - **커스터마이징 가능한 애니메이션**: Idle, Move, Attack, Hit 등 상태 전환 처리
 
----
-
 ## Characters
-
+---
 - Unity Character Controller와 NavMeshAgent을 활용하였습니다.
 - 3인칭 Top-Down Camera 시점으로 구현하여 유저가 바닥을 클릭하면 같은 연출을 했습니다.
 - Mouse Raycast 기반 Reticle 표시 기능 또한 추가하여 직관적인 조작감을 추가했습니다.
 
--- FSM(Finite State Machine) --
-
+## FSM(Finite State Machine) 
 - 플레이어와 몬스터 모두FSM(Finite State Machine)구조로 구현하였습니다. 
 - 몬스터 AI는 Waypoint를 따라 순찰하며, 시야 범위 내에 플레이어가 감지되면 추적 및 전투 상태로 전환할 수 있습니다.
 - FSM 상태 : IdleState / MoveState / AttackState / DeadState
 
--- 전투 시스템 --
+## 전투 시스템
 
 - 플레이어와 몬스터의 공격 FSM을 구현하였으며, 피격/사망 처리와 함께 공격 이펙트를 연동하여 전투의 타격감을 강화했습니다.
 
@@ -40,11 +37,11 @@
    <img src="Packages/GitImages/MonsterAtt.gif" width="900" />
 </p>
 
----
 ## Effects
-
 ---
+
 ## Inventory/Equipment
+---
 
 <p align="center">
    <img src="Packages/GitImages/InventoryUI_Diagram.png" width="900" />
@@ -52,7 +49,7 @@
 
 - 장비 아이템(Equipment)은 인벤토리에서 장착할 수 있으며, 무기(일반Mesh) 및 방어구(Skinned Mesh)를 캐릭터에 교체 적용할 수 있습니다. 
 
-**Equip Skinned Mesh**
+## Equip Skinned Mesh
 
 <p align="center">
    <img src="Packages/GitImages/EquipSkinned.gif" width="900" />
@@ -62,14 +59,14 @@
 - 플레이어 모델에서 Armature(Bone)을 유지하고, 신발, 갑옷, 장갑 등의 부분별 Skinned Mesh모델을 Blender에서 직접 제작했습니다. 
 - 각 차프는 쨍한 초록/주황 계열의 재질(Material)로 구분하여 시각적 효과를 강조했습니다. 
 
-**Equip Separate Model Mesh**
+## Equip Separate Model Mesh
 
 <p align="center">
    <img src="Packages/GitImages/EquipMesh.gif" width="900" />
 </p>
 
----
 ## Loot & Consume Item
+---
 
 <p align="center">
   <img src="Packages/GitImages/LootItems.gif" width="900" />
@@ -87,14 +84,14 @@
   <img src="Packages/GitImages/EquipItems.gif" width="900" />
 </p>
 
----
 ## User Interface (UI)
+---
 <p align="center">
    <img src="Packages/GitImages/ClickUI.gif" width="900" />
 </p>
 
----
 ## NPC Dialogue System
+---
 <p align="center">
    <img src="Packages/GitImages/NPC.gif" width="900" />
 </p>
