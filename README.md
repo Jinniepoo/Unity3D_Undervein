@@ -108,8 +108,8 @@
 
 ---
 ## 개발 환경
-- Unity 2023 LTS
-- C# 10
-- NavMesh, Animator, ScriptableObject 활용
-- GitHub를 통한 버전 관리
+- Engine: Unity 6
+- Language: C#
+- IDE: Visual Studio
+- 3D Modeling: Blender (Custom Skinned Mesh 제작, 파츠 모델링)
 
