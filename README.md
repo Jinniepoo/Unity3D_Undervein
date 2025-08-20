@@ -25,7 +25,7 @@
 - Mouse Raycast 기반 Reticle 표시 기능 또한 추가하여 직관적인 조작감을 추가했습니다.
 
 ## FSM(Finite State Machine) 
-- 플레이어와 몬스터 모두FSM(Finite State Machine)구조로 구현하였습니다. 
+- 플레이어와 몬스터 모두 FSM (Finite State Machine)구조로 구현하였습니다. 
 - 몬스터 AI는 Waypoint를 따라 순찰하며, 시야 범위 내에 플레이어가 감지되면 추적 및 전투 상태로 전환할 수 있습니다.
 - FSM 상태 : IdleState / MoveState / AttackState / DeadState
 
