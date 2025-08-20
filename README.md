@@ -66,7 +66,7 @@
 </p>
 
 - 플레이어 기본 모델의 Armature를 재활용하여, 무기 Mesh들을 Unity Armature(Bone)에 수작업으로 연결했습니다.
-- 이 과정을 통해 애니메이션 동작 시 파츠가 자연스럽게 움직이도록 구현하였으며, Player Mesh를 제외한 Armature와 무기/장비 파츠만을 Prefab으로 제작하여 장비 교체 시스템을 표현했습니다.
+- 이 과정을 통해 애니메이션 동작 시 PartObject가 자연스럽게 움직이도록 구현하였으며, Player Mesh를 제외한 Armature와 무기/장비 파츠만을 Prefab으로 제작하여 장비 교체 시스템을 표현했습니다.
 
 ---
 ## Loot & Consume Items
