@@ -20,6 +20,9 @@
 
 ---
 ## Characters
+<p align="center">
+   <img src="Packages/GitImages/ClickUI.gif" width="900" />
+</p>
 - Unity Character Controller와 NavMeshAgent을 활용하였습니다.
 - 3인칭 Top-Down Camera 시점으로 구현하여 유저가 바닥을 클릭하면 같은 연출을 했습니다.
 - Mouse Raycast 기반 Reticle 표시 기능 또한 추가하여 직관적인 조작감을 추가했습니다.
@@ -36,9 +39,6 @@
 <p align="center">
    <img src="Packages/GitImages/MonsterAtt.gif" width="900" />
 </p>
-
----
-## Effects
 
 ---
 ## Inventory/Equipment
@@ -85,12 +85,6 @@
 
 <p align="center">
   <img src="Packages/GitImages/EquipItems.gif" width="900" />
-</p>
-
----
-## User Interface (UI)
-<p align="center">
-   <img src="Packages/GitImages/ClickUI.gif" width="900" />
 </p>
 
 ---
