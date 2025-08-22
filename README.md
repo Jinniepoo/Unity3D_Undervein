@@ -64,7 +64,7 @@
 
 - 무료 Asset의 한계를 보완하기 위해 Blender에서 Skinned Mesh 모델을 직접 제작하여 게임 내에 적용했습니다.
 - 플레이어 모델에서 Armature(Bone)을 유지하고, 신발, 갑옷, 장갑 등의 부분별 Skinned Mesh모델을 Blender에서 직접 제작했습니다. 
-- 각 차프는 쨍한 초록/주황 계열의 재질(Material)로 구분하여 시각적 효과를 강조했습니다. 
+- 각 파트는 쨍한 초록/주황 계열의 재질(Material)로 구분하여 시각적 효과를 강조했습니다. 
 
 ## Equip Separate Model Mesh
 
